@@ -1,6 +1,8 @@
 {
   "name": "DroidMessage",
-  "version": "0.1.0",
+  "version": "0.2.0",
+  "author": "Sebastian Czoch",
+  "description": "Android Messages App for Desktop",
   "license": "MIT",
   "scripts": {
     "dev": "electron-webpack dev",
@@ -9,6 +11,7 @@
     "dist:dir": "yarn dist --dir -c.compression=store -c.mac.identity=null"
   },
   "dependencies": {
+    "jquery": "^3.3.1",
     "source-map-support": "^0.5.5"
   },
   "devDependencies": {
@@ -17,9 +20,11 @@
     "electron-webpack": "^2.0.1",
     "webpack": "^4.8.1"
   },
-  "files": [
-    "src/main"
-  ],
+  "build": {
+    "files": [
+      "assets//"
+   ]
+  },
   "resolutions": {
     "webpack-sources": "1.0.1"
   }
