@@ -10,7 +10,7 @@ let tray
 function createWindow () {
   win = new BrowserWindow({
     width: 800,
-    height: 600,
+    height: 500,
     title: "DroidMessage",
     darkTheme: true,
     titleBarStyle: "hidden",
@@ -24,8 +24,13 @@ function createWindow () {
 
   win.on('close', (event) => {
     event.preventDefault();
+    app.dock.hide()
     win.hide()
   })
+
+  win.on('show', () => {
+      app.dock.show()
+  });
 };
 
 function createTray() {
@@ -134,6 +139,7 @@ app.on('window-all-closed', function () {
     app.quit()
   }
 })
+
 
 app.on('activate', function () {
   if (win === null) {
