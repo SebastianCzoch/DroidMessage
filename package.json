@@ -23,7 +23,7 @@
   "build": {
     "files": [
       "assets//"
-   ]
+    ]
   },
   "resolutions": {
     "webpack-sources": "1.0.1"
