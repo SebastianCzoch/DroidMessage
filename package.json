@@ -11,14 +11,14 @@
     "dist:dir": "yarn dist --dir -c.compression=store -c.mac.identity=null"
   },
   "dependencies": {
-    "jquery": "^3.3.1",
-    "source-map-support": "^0.5.5"
+    "jquery": "3.*",
+    "source-map-support": "^0.5.*"
   },
   "devDependencies": {
-    "electron": "2.0.0",
-    "electron-builder": "^20.11.1",
-    "electron-webpack": "^2.0.1",
-    "webpack": "^4.8.1"
+    "electron": "6.*",
+    "electron-builder": "^21.*",
+    "electron-webpack": "2.*",
+    "webpack": "^4.*"
   },
   "build": {
     "files": [

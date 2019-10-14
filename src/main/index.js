@@ -81,7 +81,7 @@ function createMenu() {
       ]
     }
   ]
-  
+
   if (process.platform === 'darwin') {
     template.unshift({
       label: app.getName(),
@@ -101,7 +101,7 @@ function createMenu() {
       }
       ]
     })
-  
+
     // Edit menu
     template[1].submenu.push(
       {type: 'separator'},
@@ -113,7 +113,7 @@ function createMenu() {
         ]
       }
     )
-  
+
     // Window menu
     template[3].submenu = [
       {role: 'close'},
@@ -123,7 +123,7 @@ function createMenu() {
       {role: 'front'},
     ]
   }
-  
+
   const menu = Menu.buildFromTemplate(template)
   Menu.setApplicationMenu(menu)
 }
